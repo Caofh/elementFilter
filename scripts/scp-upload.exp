@@ -1,0 +1,22 @@
+#!/usr/bin/env expect -f
+
+set timeout 120
+set password $env(SCP_PASSWORD)
+set local $env(SCP_LOCAL)
+set remote $env(SCP_REMOTE)
+
+spawn scp -oHostKeyAlgorithms=+ssh-dss -r $local $remote
+
+expect {
+    -re "(?i)are you sure you want to continue connecting" {
+        send "yes\r"
+        exp_continue
+    }
+    -re "(?i)password:" {
+        send "$password\r"
+    }
+}
+
+expect eof
+catch wait result
+exit [lindex $result 3]

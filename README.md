@@ -2,6 +2,11 @@
 
 Chrome 扩展：在网页中按 CSS 选择器或关键词高亮 / 隐藏元素。
 
+## 官方地址
+
+- 介绍页：https://tpdoc.cn/resource/elementFilter/updatePackage/docs/index.html
+- 下载安装：https://tpdoc.cn/resource/elementFilter/updatePackage/elementFilter.zip
+
 ## 项目结构
 
 ```
