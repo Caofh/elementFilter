@@ -1,11 +1,14 @@
+**Language / 语言**: **中文** | [English](./README.en.md)
+
+---
+
 # Element Filter
 
 Chrome 扩展：在网页中按 CSS 选择器或关键词高亮 / 隐藏元素。
 
 ## 官方地址
 
-- 介绍页：https://tpdoc.cn/resource/elementFilter/updatePackage/docs/index.html
-- 下载安装：https://tpdoc.cn/resource/elementFilter/updatePackage/elementFilter.zip
+- [官方网站](https://tpdoc.cn/resource/elementFilter/updatePackage/docs/index.html)
 
 ## 项目结构
 
@@ -51,3 +54,7 @@ elementFilter/
 - `icon128.png`
 
 若暂时没有图标，可先用任意 PNG 重命名后放入该目录。
+
+## 开源许可
+
+[MIT](./LICENSE)
