@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Filter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Element Filter</h1>
+
+      <label class="field">
+        <span>CSS 选择器</span>
+        <input id="selector" type="text" placeholder="例如：div.ad, .banner" />
+      </label>
+
+      <label class="field">
+        <span>关键词（可选）</span>
+        <input id="keyword" type="text" placeholder="匹配元素文本内容" />
+      </label>
+
+      <div class="field">
+        <span>模式</span>
+        <div class="mode-group" role="radiogroup" aria-label="过滤模式">
+          <label class="mode-option">
+            <input type="radio" name="mode" value="highlight" checked />
+            <span>高亮</span>
+          </label>
+          <label class="mode-option">
+            <input type="radio" name="mode" value="hide" />
+            <span>隐藏</span>
+          </label>
+          <label class="mode-option">
+            <input type="radio" name="mode" value="show" />
+            <span>仅显示</span>
+          </label>
+        </div>
+        <p id="mode-hint" class="mode-hint" hidden>
+          保留匹配项，隐藏同选择器下的其他元素
+        </p>
+      </div>
+
+      <label class="toggle">
+        <input id="enabled" type="checkbox" />
+        <span>启用过滤</span>
+      </label>
+
+      <label class="toggle">
+        <input id="watchDom" type="checkbox" />
+        <span>监听 DOM 变化</span>
+      </label>
+      <p class="field-hint">开启后，动态加载的内容会自动重新过滤（默认关闭）</p>
+
+      <div class="actions">
+        <button id="apply" type="button">应用</button>
+        <button id="reset" type="button" class="secondary">清除</button>
+      </div>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
