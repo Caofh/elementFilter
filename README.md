@@ -1,16 +1,16 @@
-**Language / 语言**: **中文** | [English](./README.en.md)
+**Language / 语言**: [中文](./README.zh.md) | **English**
 
 ---
 
 # Element Filter
 
-Chrome 扩展：在网页中按 CSS 选择器或关键词高亮 / 隐藏元素。
+A Chrome extension to highlight or hide elements on web pages using CSS selectors or keywords.
 
-## 官方地址
+## Official Site
 
-- [官方网站](https://tpdoc.cn/resource/elementFilter/updatePackage/docs/index.html)
+- [Official website](https://tpdoc.cn/resource/elementFilter/updatePackage/docs/index.html)
 
-## 项目结构
+## Project Structure
 
 ```
 elementFilter/
@@ -18,43 +18,43 @@ elementFilter/
 ├── icons/
 ├── src/
 │   ├── background/background.js   # Service Worker
-│   ├── content/content.js         # 页面注入脚本
+│   ├── content/content.js         # Content script
 │   ├── content/content.css
-│   └── popup/                     # 扩展弹窗 UI
+│   └── popup/                     # Extension popup UI
 └── README.md
 ```
 
-## 本地加载
+## Load Locally
 
-1. 打开 Chrome，访问 `chrome://extensions/`
-2. 开启右上角 **开发者模式**
-3. 点击 **加载已解压的扩展程序**
-4. 选择本项目根目录 `elementFilter`
+1. Open Chrome and go to `chrome://extensions/`
+2. Enable **Developer mode** in the top-right corner
+3. Click **Load unpacked**
+4. Select the project root directory `elementFilter`
 
-## 使用说明
+## Usage
 
-1. 打开任意网页
-2. 点击扩展图标
-3. 输入 CSS 选择器（如 `div.ad`）或关键词
-4. 选择「高亮」或「隐藏」
-5. 勾选「启用过滤」并点击「应用」
+1. Open any web page
+2. Click the extension icon
+3. Enter a CSS selector (e.g. `div.ad`) or a keyword
+4. Choose **Highlight** or **Hide**
+5. Check **Enable filter** and click **Apply**
 
-## 开发说明
+## Development
 
-- 使用 Manifest V3
-- 配置保存在 `chrome.storage.sync`
-- 修改代码后，在 `chrome://extensions/` 点击扩展的刷新按钮即可
+- Built with Manifest V3
+- Settings are stored in `chrome.storage.sync`
+- After code changes, click the refresh button on `chrome://extensions/`
 
-## 图标
+## Icons
 
-请在 `icons/` 目录放置以下尺寸的 PNG 图标：
+Place PNG icons in the `icons/` directory with the following sizes:
 
 - `icon16.png`
 - `icon48.png`
 - `icon128.png`
 
-若暂时没有图标，可先用任意 PNG 重命名后放入该目录。
+If you don't have icons yet, you can use any PNG files renamed accordingly.
 
-## 开源许可
+## License
 
 [MIT](./LICENSE)
