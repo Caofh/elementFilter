@@ -1,0 +1,10 @@
+{
+  "name": "element-filter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome 扩展：在网页中按 CSS 选择器或关键词高亮 / 隐藏元素",
+  "scripts": {
+    "pack": "zip -r updatePackage/elementFilter.zip . -x '*.git*' -x '*.DS_Store' -x 'node_modules/*' -x 'dist/*' -x '*.zip'",
+    "publishAli2": "npm run pack && scp -oHostKeyAlgorithms=+ssh-dss -r updatePackage root@182.92.158.171:/data/resource/elementFilter"
+  }
+}
